@@ -15,7 +15,15 @@ namespace U1W1_OOP
 
             auto.Modello = "ModelX";
 
-            Console.WriteLine($"Quella {auto.marca} è una {auto.Modello}");
+            Dipendente dipendente = new Dipendente()
+            {
+                nome = "Roberto",
+                età = 26
+            };
+            
+            dipendente.veicolo = auto;
+
+            Console.WriteLine($"{dipendente.nome} ha una {dipendente.veicolo.marca} - {dipendente.veicolo.Modello}");
             Console.ReadLine();
         }
     }

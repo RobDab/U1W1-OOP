@@ -8,5 +8,14 @@ namespace U1W1_OOP
 {
     internal class Dipendente
     {
+        public string nome;
+        public int età;
+
+        
+        public Veicolo veicolo = new Veicolo();
+
+        
+
+
     }
 }
